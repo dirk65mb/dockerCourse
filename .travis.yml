@@ -6,7 +6,7 @@ services:
 language: bash
 
 before_script:
-    - "docker build -t <Your Docker ID>/autobuilds ."
+    - "docker build -t dirk65mb/dockerCourse ."
     - "docker container run --detach --publish 8080:80 dirk65mb/dockerCourse"
     - docker ps
 
